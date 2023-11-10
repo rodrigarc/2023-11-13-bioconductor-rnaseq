@@ -94,11 +94,8 @@ workshop is only open to people from a particular institution.
   <li>exposição independente ao R e RStudio</li>
 </ol>
 <p>
-Além disso, esta lição pressupõe que os aprendizes têm alguma familiaridade com a transcrição de RNA e sequenciamento de alto rendimento.<br>
-<br>
+Além disso, esta lição pressupõe que os aprendizes têm alguma familiaridade com a transcrição de RNA e NGS.<br>
 Os perfis de aprendizes de participantes hipotéticos do workshop de RNA-Seq podem ser encontrados nesta <a href="https://carpentries-incubator.github.io/bioc-rnaseq/profiles.html">página.</a><br>
-<br>
-Os participantes devem trazer seus próprios laptops e planejar participar ativamente.
 </p>
 
 {% endif %}
