@@ -324,7 +324,16 @@ of code below the Schedule `<h2>` header below with
 
 <h2 id="cronograma">Cronograma</h2>
 
-{% include custom-schedule.html %}
+{% if site.carpentry == "swc" %}
+{% include swc/schedule.html %}
+{% elsif site.carpentry == "dc" %}
+{% include dc/schedule.html %}
+{% elsif site.carpentry == "lc" %}
+{% include lc/schedule.html %}
+{% elsif site.carpentry == "bioc" %}		
+{% include bioc/schedule.html %}
+{% elsif site.carpentry == "incubator" %}
+This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
 
 {% endif %}
 
