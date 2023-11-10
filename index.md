@@ -9,10 +9,10 @@ country: "br"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "pt"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
 latitude: "-1.45"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-48.50"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "Novembro 13-15, 2023"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "Novembro 13-14, 2023"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00 - 16:00 GMT-3"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2023-11-13      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2023-11-15        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+enddate: 2023-11-14        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Rodrigo Arcoverde Cerveira da Silva"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Edivaldo Costa Souza Júnior"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["rodrigo.arcoverde@ki.se","rodrigo.arcoverdi@gmail.com", "edivaldo.junior@iec.gov.br"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
@@ -46,7 +46,7 @@ It looks like you are setting up a website for a Data Carpentry curriculum but y
 
 
 
-<h2 id="general">Informações gerais</h2>
+<h2 id="informações-gerais">Informações gerais</h2>
 
 {% comment %}
 INTRODUÇÃO
@@ -64,7 +64,6 @@ the pitch.
 <a href="https://www.bioconductor.org/" title="Bioconductor">
   <img alt="Bioconductor" src="https://www.bioconductor.org/images/logo/jpg/bioconductor_logo_cmyk.jpg" height="200" />
 </a>
-{% endif %}
 A Bioconductor Carpentries desenvolve e ministra workshops sobre as habilidades fundamentais de dados necessárias para conduzir análises de dados ômicos. Seu público-alvo são pesquisadores experimentais que têm pouca ou nenhuma experiência computacional anterior, e suas lições são específicas de um domínio, com base no conhecimento existente dos alunos para capacitá-los a aplicar rapidamente as habilidades aprendidas em suas próprias pesquisas. Os participantes serão incentivados a ajudar uns aos outros e a aplicar o que aprenderam aos seus próprios problemas de pesquisa.
 
 Este é um workshop piloto, testando uma lição que ainda está em desenvolvimento. Os autores da lição apreciariam qualquer feedback que você pudesse dar sobre o conteúdo da lição e sugestões sobre como ela poderia ser melhorada.
