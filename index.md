@@ -63,7 +63,8 @@ the pitch.
 {% elsif site.carpentry == "incubator" %}
 <a href="https://www.bioconductor.org/" title="Bioconductor">
   <img alt="Bioconductor" src="https://www.bioconductor.org/images/logo/jpg/bioconductor_logo_cmyk.jpg" height="200" />
-</a>
+</a><br>
+
 A Bioconductor Carpentries desenvolve e ministra workshops sobre as habilidades fundamentais de dados necessárias para conduzir análises de dados ômicos. Seu público-alvo são pesquisadores experimentais que têm pouca ou nenhuma experiência computacional anterior, e suas lições são específicas de um domínio, com base no conhecimento existente dos alunos para capacitá-los a aplicar rapidamente as habilidades aprendidas em suas próprias pesquisas. Os participantes serão incentivados a ajudar uns aos outros e a aplicar o que aprenderam aos seus próprios problemas de pesquisa.
 
 Este é um workshop piloto, testando uma lição que ainda está em desenvolvimento. Os autores da lição apreciariam qualquer feedback que você pudesse dar sobre o conteúdo da lição e sugestões sobre como ela poderia ser melhorada.
