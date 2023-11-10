@@ -46,7 +46,7 @@ It looks like you are setting up a website for a Data Carpentry curriculum but y
 
 
 
-<h2 id="general">General Information</h2>
+<h2 id="general">Informações gerais</h2>
 
 {% comment %}
 INTRODUÇÃO
@@ -99,8 +99,8 @@ address.
 {% assign online = "false" %}
 {% endif %}
 {% if page.latitude and page.longitude and online == "false" %}
-<p id="where">
-  <strong>Where:</strong>
+<p id="onde">
+  <strong>Onde:</strong>
   {{page.address}}.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
@@ -108,15 +108,15 @@ address.
   <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
 </p>
 {% elsif online == "true_public" %}
-<p id="where">
-  <strong>Where:</strong>
+<p id="onde">
+  <strong>Onde:</strong>
   online at <a href="{{page.address}}">{{page.address}}</a>.
   If you need a password or other information to access the training,
   the instructor will pass it on to you before the workshop.
 </p>
 {% elsif online == "true_private" %}
-<p id="where">
-  <strong>Where:</strong> This training will take place online.
+<p id="onde">
+  <strong>Onde:</strong> This training will take place online.
   The instructors will provide you with the information you will need to connect to this meeting.
 </p>
 {% endif %}
@@ -127,8 +127,8 @@ DATE
 This block displays the date and links to Google Calendar.
 {% endcomment %}
 {% if page.humandate %}
-<p id="when">
-  <strong>When:</strong>
+<p id="quando">
+  <strong>Quando:</strong>
   {{page.humandate}}.
   {% include workshop_calendar.html %}
 </p>
@@ -139,8 +139,8 @@ SPECIAL REQUIREMENTS
 
 Modify the block below if there are any special requirements.
 {% endcomment %}
-<p id="requirements">
-  <strong>Requirements:</strong>
+<p id="requisitos">
+  <strong>Requisitos:</strong>
   {% if online == "false" %}
 Os participantes terão acesso a computadores com laptop com
      Sistema operacional Mac, Linux ou Windows com R ( > v 4.0.0) e RStudio instalados. 
@@ -148,17 +148,16 @@ Os participantes terão acesso a computadores com laptop com
     Participants must have access to a computer with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
   {% endif %}
-  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
 </p>
 
 {% comment %}
-ACCESSIBILITY
+Acessibilidade
 
 Modify the block below if there are any barriers to accessibility or
 special instructions.
 {% endcomment %}
-<p id="accessibility">
-  <strong>Accessibility:</strong>
+<p id="acessibilidade">
+  <strong>Acessibilidade:</strong>
 {% if online == "false" %}
  Estamos empenhados em tornar este workshop
    acessível a todos. Para workshops em locais físicos, os organizadores dos workshops verificaram se:
@@ -187,8 +186,8 @@ CONTACT EMAIL ADDRESS
 
 Display the contact email address set in the configuration file.
 {% endcomment %}
-<p id="contact">
-  <strong>Contact:</strong>
+<p id="contato">
+  <strong>Contato:</strong>
   Por favor contate
   {% if page.email %}
   {% for email in page.email %}
@@ -207,10 +206,10 @@ Display the contact email address set in the configuration file.
   para mais informações.
 </p>
 
-<p id="roles">
-  <strong>Roles:</strong>
-  To learn more about the roles at the workshop (who will be doing what),
-  refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
+<p id="função">
+  <strong>Função:</strong>
+  Para saber mais sobre as funções no workshop (quem fará o quê),
+  referira-se <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop"> ao nosso FAQ do workshop </a>.
 </p>
 
 {% comment %}
@@ -323,17 +322,10 @@ of code below the Schedule `<h2>` header below with
 `{% include custom-schedule.html %}`.
 {% endcomment %}
 
-<h2 id="schedule">Schedule</h2>
+<h2 id="cronograma">Cronograma</h2>
 
-{% if site.carpentry == "swc" %}
-{% include swc/schedule.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/schedule.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/schedule.html %}
-{% elsif site.carpentry == "incubator" %}
-This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
-Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list of lesson sections and estimated timings.
+{% include custom-schedule.html %}
+
 {% endif %}
 
 {% comment %}
@@ -377,9 +369,9 @@ please preview your site before committing, and make sure to run
   Além disso, você precisará de um navegador atualizado.
 </p>
 <p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+  Mantemos uma lista de problemas comuns que ocorrem durante a instalação como referência para os instrutores, o que pode ser útil na
+  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">página do wiki Problemas e Soluções de 
+  Configuração</a>.
 </p>
 
 {% comment %}
@@ -408,7 +400,6 @@ during the workshop.
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
-Please check the "Setup" page of
-[the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
-to obtain the software and data you will need to follow the lesson.
+Por favor, confira a página "Configuração" do
+[site da lição]({{ site.incubator_lesson_site }}) para obter instruções sobre como obter o software e os dados necessários para seguir a lição.
 {% endif %}
