@@ -102,10 +102,6 @@ address.
 <p id="onde">
   <strong>Onde:</strong>
   {{page.address}}.
-  Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
 </p>
 {% elsif online == "true_public" %}
 <p id="onde">
@@ -241,7 +237,7 @@ Código de conduta
 <h2 id="code-of-conduct">Código de conduta</h2>
 
 <p>
-Todos os que participam nas atividades da Carpintaria são obrigados a cumprir as <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. Este documento também descreve como relatar um incidente, se necessário.
+Todos os que participam nas atividades da Carpintaria são obrigados a cumprir o <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Código de Conduta</a>. Este documento também descreve como relatar um incidente, se necessário.
 </p>
 
 <p class="text-center">
@@ -333,6 +329,7 @@ of code below the Schedule `<h2>` header below with
 {% elsif site.carpentry == "bioc" %}		
 {% include bioc/schedule.html %}
 {% elsif site.carpentry == "incubator" %}
+{% include custom-schedule.html %}
 This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
 
 {% endif %}
@@ -409,6 +406,6 @@ during the workshop.
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
-Por favor, confira a página "Configuração" do
+Por favor, confira a página "Summary and Setup" do
 [site da lição]({{ site.incubator_lesson_site }}) para obter instruções sobre como obter o software e os dados necessários para seguir a lição.
 {% endif %}
