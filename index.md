@@ -84,7 +84,23 @@ workshop is only open to people from a particular institution.
 {% elsif site.carpentry == "lc" %}
 {% include lc/who.html %}
 {% elsif site.carpentry == "incubator" %}
-{% include who.html %}
+<p id="quem">
+  <strong>Quem:</strong>
+  Esta lição pressupõe que você possui conhecimento prático de R e alguma exposição prévia ao RStudio.
+  Esses requisitos podem ser atendidos por meio de:
+</p>
+<ol type="a">
+  <li>completar um <a href="https://carpentries-incubator.github.io/bioc-intro/">Workshop de Introdução ao R do Carpentries Bioconductor</a></li>
+  <li>exposição independente ao R e RStudio</li>
+</ol>
+<p>
+Além disso, esta lição pressupõe que os aprendizes têm alguma familiaridade com a transcrição de RNA e sequenciamento de alto rendimento.<br>
+<br>
+Os perfis de aprendizes de participantes hipotéticos do workshop de RNA-Seq podem ser encontrados nesta <a href="https://carpentries-incubator.github.io/bioc-rnaseq/profiles.html">página.</a><br>
+<br>
+Os participantes devem trazer seus próprios laptops e planejar participar ativamente.
+</p>
+
 {% endif %}
 
 {% comment %}
