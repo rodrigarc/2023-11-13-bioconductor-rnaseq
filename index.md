@@ -83,6 +83,8 @@ workshop is only open to people from a particular institution.
 {% include dc/who.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/who.html %}
+{% elsif site.carpentry == "incubator" %}
+{% include bioc/who.html %}
 {% endif %}
 
 {% comment %}
@@ -329,8 +331,6 @@ of code below the Schedule `<h2>` header below with
 {% include dc/schedule.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
-{% elsif site.carpentry == "bioc" %}		
-{% include bioc/schedule.html %}
 {% elsif site.carpentry == "incubator" %}
 {% include custom-schedule.html %}
 This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
