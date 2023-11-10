@@ -61,8 +61,6 @@ the pitch.
 {% elsif site.carpentry == "lc" %}
 {% include lc/intro.html %}
 {% endif %}
-
-{% if site.pilot %}
 <a href="https://www.bioconductor.org/" title="Bioconductor">
   <img alt="Bioconductor" src="https://www.bioconductor.org/images/logo/jpg/bioconductor_logo_cmyk.jpg" height="200" />
 </a>
