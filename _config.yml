@@ -18,7 +18,7 @@
 # When setting this field to "incubator", please uncomment the
 # incubator_lesson_site, incubator_pre_survey, and incubator_post_survey
 # lines further down this file and add the URL to the relevant lesson site.
-carpentry: "swc"
+carpentry: "incubator"
 
 # This option is currently only needed for
 # Data Carpentry and Software Carpentry workshops.
@@ -53,20 +53,20 @@ pilot: false
 # Most workshops don't use extra pages. More information about extra
 # pages are included in the README:
 # https://github.com/carpentries/workshop-template#creating-extra-pages
-title: "Workshop Title"
+title: "Análise de RNAseq utilizando Bioconductor"
 
 #------------------------------------------------------------
 # Incubator workshop settings (only relevant for workshops teaching a lesson
 # in The Carpentries Incubator).
 #
 # For an Incubator workshop, uncomment the line below and add the URL of the lesson site.
-# incubator_lesson_site: "put the URL of the lesson being taught here"
+incubator_lesson_site: "https://carpentries-incubator.github.io/bioc-rnaseq/"
 #
 # For an Incubator workshop, uncomment the line below and add the URL of your pre-workshop survey
-# incubator_pre_survey: "put the URL of your pre-workshop survey here"
+incubator_pre_survey: "https://forms.gle/HdscMudhHvCCZDfN9"
 #
 # For an Incubator workshop, uncomment the line below and add the URL of your post-workshop survey
-# incubator_post_survey: "put the URL of your post-workshop survey here"
+incubator_post_survey: "https://forms.gle/1KXPi6m4a3M8v2cu7"
 #
 #------------------------------------------------------------
 
