@@ -237,9 +237,9 @@ Edit the text to match who can attend the workshop. For instance:
 <hr/>
 
 {% comment%}
-CODE OF CONDUCT
+Código de conduta
 {% endcomment %}
-<h2 id="code-of-conduct">Code of Conduct</h2>
+<h2 id="code-of-conduct">Código de conduta</h2>
 
 <p>
 Todos os que participam nas atividades da Carpintaria são obrigados a cumprir as <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. Este documento também descreve como relatar um incidente, se necessário.
@@ -277,9 +277,9 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 
 
 {% comment %}
-SURVEYS - DO NOT EDIT SURVEY LINKS
+Questionários - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
-<h2 id="surveys">Surveys</h2>
+<h2 id="surveys">Questionários</h2>
 <p>Certifique-se de preencher essas pesquisas antes e depois do workshop.</p>
 {% if site.carpentry == "incubator" %}
 <p><a href="{{ site.incubator_pre_survey }}">Pré-workshop Survey</a></p>
