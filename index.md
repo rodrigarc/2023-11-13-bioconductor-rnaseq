@@ -3,7 +3,7 @@ layout: workshop      # DON'T CHANGE THIS.
 # More detailed instructions (including how to fill these variables for an
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
-venue: "Instituto Evandro Chagas, Belém, Brasi;"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+venue: "Instituto Evandro Chagas, Belém, Brasil;"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
 address: "Av. Almirante Barroso, 492, Belém, Pará"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "br"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "pt"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
@@ -44,43 +44,12 @@ It looks like you are setting up a website for a Data Carpentry curriculum but y
 {% endunless %}
 {% endif %}
 
-{% comment %}
-Check SWC curriculum
-{% endcomment %}
-
-{% if site.carpentry == "swc" %}
-{% unless site.curriculum == "swc-inflammation" or site.curriculum == "swc-gapminder" %}
-<div class="alert alert-warning">
-It looks like you are setting up a website for a Software Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>swc-inflammation</code>, or <code>swc-gapminder</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
-</div>
-{% endunless %}
-{% endif %}
-
-{% comment %}
-EVENTBRITE
-
-This block includes the Eventbrite registration widget if
-'eventbrite' has been set in the header.  You can delete it if you
-are not using Eventbrite, or leave it in, since it will not be
-displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
-{% if page.eventbrite %}
-<strong>Some adblockers block the registration window. If you do not see the
-  registration box below, please check your adblocker settings.</strong>
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="280px"
-  scrolling="auto">
-</iframe>
-{% endif %}
 
 
 <h2 id="general">General Information</h2>
 
 {% comment %}
-INTRODUCTION
+INTRODUÇÃO
 
 Edit the general explanatory paragraph below if you want to change
 the pitch.
@@ -94,7 +63,7 @@ the pitch.
 {% endif %}
 
 {% if site.pilot %}
-This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
+Este é um workshop piloto, testando uma lição que ainda está em desenvolvimento. Os autores da lição apreciariam qualquer feedback que você pudesse dar sobre o conteúdo da lição e sugestões sobre como ela poderia ser melhorada.
 {% endif %}
 
 {% comment %}
@@ -171,8 +140,8 @@ Modify the block below if there are any special requirements.
 <p id="requirements">
   <strong>Requirements:</strong>
   {% if online == "false" %}
-    Participants must bring a laptop with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+Os participantes terão acesso a computadores com laptop com
+     Sistema operacional Mac, Linux ou Windows com R ( > v 4.0.0) e RStudio instalados. 
   {% else %}
     Participants must have access to a computer with a
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
@@ -189,25 +158,25 @@ special instructions.
 <p id="accessibility">
   <strong>Accessibility:</strong>
 {% if online == "false" %}
-  We are committed to making this workshop
-  accessible to everybody.  For workshops at a physical location, the workshop organizers have checked that:
+ Estamos empenhados em tornar este workshop
+   acessível a todos. Para workshops em locais físicos, os organizadores dos workshops verificaram se:
 </p>
 <ul>
-  <li>The room is wheelchair / scooter accessible.</li>
-  <li>Accessible restrooms are available.</li>
+  <li>O local é acessível para cadeiras de rodas/scooter.</li>
+  <li>Banheiros acessíveis estão disponíveis.</li>
 </ul>
 <p>
-  Materials will be provided in advance of the workshop and
-  large-print handouts are available if needed by notifying the
-  organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  get in touch (using contact details below) and we will
-  attempt to provide them.
+   Os materiais serão fornecidos antes do workshop e
+   folhetos em letras grandes estão disponíveis, se necessário, notificando o
+   organizadores com antecedência. Se pudermos ajudar a tornar o aprendizado mais fácil para
+   você (por exemplo, intérpretes de linguagem de sinais, instalações de lactação), por favor
+   entre em contato (usando os dados de contato abaixo) e nós
+   tentar fornecê-los.
 </p>
 {% else %}
-  We are dedicated to providing a positive and accessible learning environment for all. Please
-  notify the instructors in advance of the workshop if you require any accommodations or if there is
-  anything we can do to make this workshop more accessible to you.
+  Estamos empenhados em fornecer um ambiente de aprendizagem positivo e acessível para todos. Por favor
+   notificar os instrutores com antecedência do workshop se você precisar de alguma acomodação ou se houver
+   tudo o que pudermos fazer para tornar este workshop mais acessível para você.
 </p>
 {% endif %}
 
@@ -218,7 +187,7 @@ Display the contact email address set in the configuration file.
 {% endcomment %}
 <p id="contact">
   <strong>Contact:</strong>
-  Please email
+  Por favor contate
   {% if page.email %}
   {% for email in page.email %}
   {% if forloop.last and page.email.size > 1 %}
@@ -233,7 +202,7 @@ Display the contact email address set in the configuration file.
   {% else %}
   to-be-announced
   {% endif %}
-  for more information.
+  para mais informações.
 </p>
 
 <p id="roles">
@@ -271,12 +240,12 @@ CODE OF CONDUCT
 <h2 id="code-of-conduct">Code of Conduct</h2>
 
 <p>
-Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+Todos os que participam nas atividades da Carpintaria são obrigados a cumprir as <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. Este documento também descreve como relatar um incidente, se necessário.
 </p>
 
 <p class="text-center">
   <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
-    <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
+    <button type="button" class="btn btn-info">Relatar um Incidente de Código de Conduta</button>
   </a>
 </p>
 <hr/>
@@ -309,10 +278,10 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
+<p>Certifique-se de preencher essas pesquisas antes e depois do workshop.</p>
 {% if site.carpentry == "incubator" %}
-<p><a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a></p>
+<p><a href="{{ site.incubator_pre_survey }}">Pré-workshop Survey</a></p>
+<p><a href="{{ site.incubator_post_survey }}">Pós-workshop Survey</a></p>
 {% elsif site.incubator_pre_survey or site.incubator_post_survey %}
 <div class="alert alert-danger">
 WARNING: you have defined custom pre- and/or post-survey links for
@@ -323,8 +292,8 @@ in `_config.yml` or, if this workshop is teaching a lesson in the Incubator,
 change the value of `carpentry` to `incubator`.
 </div>
 {% else %}
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Questionário pré-workshop</a></p>
+<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Questionário pós-workshop</a></p>
 {% endif %}
 
 <hr/>
@@ -393,7 +362,7 @@ please preview your site before committing, and make sure to run
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a
+  Para participar nesse
   {% if site.carpentry == "swc" %}
   Software Carpentry
   {% elsif site.carpentry == "dc" %}
@@ -402,8 +371,8 @@ please preview your site before committing, and make sure to run
   Library Carpentry
   {% endif %}
   workshop,
-  you will need access to software as described below.
-  In addition, you will need an up-to-date web browser.
+  você vai precisar de acesso aos Sofwares descritos abaixo.
+  Além disso, você precisará de um navegador atualizado.
 </p>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
