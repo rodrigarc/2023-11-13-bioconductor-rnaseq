@@ -422,5 +422,6 @@ during the workshop.
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
 Por favor, confira a página "Summary and Setup" do
-[site da lição]({{ site.incubator_lesson_site }}) para obter instruções sobre como obter o software e os dados necessários para seguir a lição.
+**[clicando AQUI para o ser direcionado ao site da lição]**({{ site.incubator_lesson_site }}) para obter instruções sobre como obter o software e os dados necessários para seguir a lição.
+Caso queiram baixas os arquivos `.Rmd` que contém tanto os scripts em "R chunks" e os textos formatados em markdown. Acesse **[essa pasta no Google Drive]**(https://drive.google.com/drive/folders/11fzad2JhEK7aZrzQ37fwVmnzuHj3v1Wi?usp=sharing) e baixe tantos os `.Rmd`, os slides, e os dados utilizados para análise.
 {% endif %}
